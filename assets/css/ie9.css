@@ -44,14 +44,14 @@
 
 /* Banner + Wrapper (style4) */
 
-	#banner,
-	.wrapper.style4 {
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-	}
+#banner,
+.wrapper.style4 {
+    background-image: url('../../images/banned1cleveland.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 		#banner:before,
 		.wrapper.style4:before {
@@ -100,13 +100,13 @@
 
 /* Main */
 
-	#main > header {
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-	}
+#main > header {
+    background-image: url('../../images/banned1cleveland.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 		#main > header:before {
 			background: #000000;
