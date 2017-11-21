@@ -2641,7 +2641,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #007FFF;
 			color: #c7ebe8;
 		}
 
@@ -2799,7 +2799,7 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #007FFF;
 			color: #d3d4e4;
 		}
 
@@ -3812,3 +3812,6 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+   
+   
