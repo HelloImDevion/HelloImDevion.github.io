@@ -14,12 +14,62 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
         <style>
-        .features li{
-        transition:all .2s ease-in-out;
-        }
-        .features li:hover {
-        transform: scale(1.1);
-        }
+            .features li {
+                transition: all .2s ease-in-out;
+            }
+
+                .features li:hover {
+                    transform: scale(1.1);
+                }
+
+            .word {
+                width: 100px;
+                height: 100px;
+                color: red;
+                -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+
+            /* Safari 4.0 - 8.0 */
+            @-webkit-keyframes example {
+                0% {
+                    color: red;
+                }
+
+                25% {
+                    color: yellow;
+                }
+
+                50% {
+                    color: blue;
+                }
+
+                100% {
+                    color: green;
+                }
+            }
+
+            /* Standard syntax */
+            @keyframes example {
+                0% {
+                    color: red;
+                }
+
+                25% {
+                    color: yellow;
+                }
+
+                50% {
+                    color: blue;
+                }
+
+                100% {
+                    color: green;
+                }
+            }
         </style>
 	</head>
 	<body class="landing">
@@ -65,9 +115,9 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Hello Im Devion I hope you enjoy my website and it <br />
-                                    gives you the informantion you need about me and what I am able to do. Enjoy!</h2>
-								<p>Psssssst. If you have a questions and want to direct message me go to my <a href="contact.html">Contact page</a>,<br />
-							    also go to my <a href="about.html">about page</a> to learn more of my personal life.</p>
+                                    gives you the information you need about me and what I am able to do. Enjoy!</h2>
+								<p>Psssssst. If you have a questions and want to direct message me go to my <a class="icon word" href="contact.html">Contact page</a>,<br />
+							    also go to my <a class="icon word" href="about.html">about page</a> to learn more of my personal life.</p>
 							</header>
 						</div>
 					</section>
@@ -77,19 +127,19 @@
 						<section class="spotlight">
 							<div class="image"><img src="images/reviewsiteimage1.png" alt="" /></div><div class="content">
 								<h2>Review Site Project</h2>
-								<p>I created this project Week 11 into the We Can Code it bootcamp the review site project we had to make a web site where we could make a review, edit it, delete it, and view it. to view the project <a href="https://github.com/HelloImDevion/Week11ReviewSite">Press me</a>!</p>
+								<p>I created this project Week 11 into the We Can Code it bootcamp the review site project we had to make a web site where we could make a review, edit it, delete it, and view it. to view the project <a class="icon word" href="https://github.com/HelloImDevion/Week11ReviewSite">Press me</a>!</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/virtualpetimage2.png" alt="" /></div><div class="content">
 								<h2>Virtual Pet Project</h2>
-								<p>The virtual pet project was a challenging project where we had to make a pet that takes in commands using C# to view my project <a href="https://github.com/HelloImDevion/Week4VirtualPet">Press me</a>!</p>
+								<p>The virtual pet project was a challenging project where we had to make a pet that takes in commands using C# to view my project <a class="icon word" href="https://github.com/HelloImDevion/Week4VirtualPet">Press me</a>!</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/Tuscanyvillaproject.png" alt="" /></div><div class="content">
 								<h2>Tuscany Villa Project</h2>
-								<p>Tuscany villa project another challenging project where it challenged my HTML skills to copy a web page that was designed by a very talentied group of people to view my project <a href="https://github.com/HelloImDevion/week8Tuscanyproject">Press me</a>! </p>
+								<p>Tuscany villa project another challenging project where it challenged my HTML skills to copy a web page that was designed by a very talentied group of people to view my project <a class="icon word" href="https://github.com/HelloImDevion/week8Tuscanyproject">Press me</a>! </p>
 							</div>
 						</section>
 					</section>
@@ -135,12 +185,13 @@
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2>In Conclusion</h2>
+								<p>A conclusion is the place where you get tired of thinking.
+                                - Arthur Bloch</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<li><a href="contact.html" class="button fit special">Contact Me</a></li>
+								<li><a href="about.html" class="button fit">Learn More</a></li>
 							</ul>
 						</div>
 					</section>
@@ -148,14 +199,14 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/devionfothergill/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://www.facebook.com/dee.fothergill" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/fvmous_dev_/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/HelloImDevion?tab=repositories" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://mail.google.com/mail/u/0/#inbox/15fdf0b611245678?compose=new" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/devionfothergill/" class="icon word fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.facebook.com/dee.fothergill" class="icon word fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/fvmous_dev_/" class="icon word fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/HelloImDevion?tab=repositories" class="icon word fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://mail.google.com/mail/u/0/#inbox/15fdf0b611245678?compose=new" class="icon word fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Devion Fothergill</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Devion Fothergill</li><li>Design: <a class="icon word" href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 

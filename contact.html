@@ -13,120 +13,177 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <style>
+            .features li {
+                transition: all .2s ease-in-out;
+            }
+
+                .features li:hover {
+                    transform: scale(1.1);
+                }
+
+            .word {
+                width: 100px;
+                height: 100px;
+                color: red;
+                -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+
+            /* Safari 4.0 - 8.0 */
+            @-webkit-keyframes example {
+                0% {
+                    color: red;
+                }
+
+                25% {
+                    color: yellow;
+                }
+
+                50% {
+                    color: blue;
+                }
+
+                100% {
+                    color: green;
+                }
+            }
+
+            /* Standard syntax */
+            @keyframes example {
+                0% {
+                    color: red;
+                }
+
+                25% {
+                    color: yellow;
+                }
+
+                50% {
+                    color: blue;
+                }
+
+                100% {
+                    color: green;
+                }
+            }
+        </style>
 	</head>
 	<body>
 
 		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+        <div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Contact Devion Fothergill</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about.html">About</a></li>
-											<li><a href="contact.html">Contact</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Contact Devion Fothergill</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>Generic Page</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
+            <!-- Main -->
+            <article id="main">
+                <header>
+                    <h2>Contact</h2>
+                    <p>Contact me any time and I'll get back with you soon!</p>
+                </header>
+                <section class="wrapper style5">
+                    <div class="inner">
 
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+                        <h3>Conact me at:</h3>
+                        <p>Phone: (216)937-9691</p>
+                        <p>Email: devionfothergill@gmail.com</p>
+                        <p>Please if I dont answer my phone leave a detailed voice message and/or text message. Thank You!</p>
+                        <hr />
 
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-								<hr />
-
-                                <section>
-                                    <h4>Contact Form</h4>
-                                    <form method="post"  action="form_process.php">
-                                        <div class="row uniform">
-                                            <div class="6u 12u$(xsmall)">
-                                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-                                            </div>
-                                            <div class="6u$ 12u$(xsmall)">
-                                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-                                            </div>
-                                            <div class="12u$">
-                                                <div class="select-wrapper">
-                                                    <select name="demo-category" id="demo-category">
-                                                        <option value="">- Page Feedback -</option>
-                                                        <option value="1">Bad</option>
-                                                        <option value="1">ok</option>
-                                                        <option value="1">Good</option>
-                                                        <option value="1">Fantastic</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="4u 12u$(small)">
-                                                <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                                                <label for="demo-priority-low">Found me on linkin</label>
-                                            </div>
-                                            <div class="4u 12u$(small)">
-                                                <input type="radio" id="demo-priority-normal" name="demo-priority">
-                                                <label for="demo-priority-normal">Found me on social media</label>
-                                            </div>
-                                            <div class="4u$ 12u$(small)">
-                                                <input type="radio" id="demo-priority-high" name="demo-priority">
-                                                <label for="demo-priority-high">Found me through a contact</label>
-                                            </div>
-                                            <div class="6u 12u$(small)">
-                                                <input type="checkbox" id="demo-copy" name="demo-copy">
-                                                <label for="demo-copy">Email me a copy</label>
-                                            </div>
-                                            <div class="6u$ 12u$(small)">
-                                                <input type="checkbox" id="demo-human" name="demo-human" checked>
-                                                <label for="demo-human">Not a robot</label>
-                                            </div>
-                                            <div class="12u$">
-                                                <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-                                            </div>
-                                            <div class="12u$">
-                                                <ul class="actions">
-                                                    <li><input type="submit" value="Send Message"  class="special" /></li>
-                                                    <li><input type="reset" value="Reset" /></li>
-                                                </ul>
-                                            </div>
+                        <section>
+                            <h4>Contact Form</h4>
+                            <form method="post" action="mailto:devionfothergill@gmail.com">
+                                <div class="row uniform">
+                                    <div class="6u 12u$(xsmall)">
+                                        <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+                                    </div>
+                                    <div class="6u$ 12u$(xsmall)">
+                                        <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                                    </div>
+                                    <div class="12u$">
+                                        <div class="select-wrapper">
+                                            <select name="demo-category" id="demo-category">
+                                                <option value="">- Page Feedback -</option>
+                                                <option value="1">Bad</option>
+                                                <option value="1">ok</option>
+                                                <option value="1">Good</option>
+                                                <option value="1">Fantastic</option>
+                                            </select>
                                         </div>
-                                    </form>
-                                </section>
-							</div>
-						</section>
-					</article>
+                                    </div>
+                                    <div class="4u 12u$(small)">
+                                        <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                        <label for="demo-priority-low">Found me on linkin</label>
+                                    </div>
+                                    <div class="4u 12u$(small)">
+                                        <input type="radio" id="demo-priority-normal" name="demo-priority">
+                                        <label for="demo-priority-normal">Found me on social media</label>
+                                    </div>
+                                    <div class="4u$ 12u$(small)">
+                                        <input type="radio" id="demo-priority-high" name="demo-priority">
+                                        <label for="demo-priority-high">Found me through a contact</label>
+                                    </div>
+                                    <div class="6u 12u$(small)">
+                                        <input type="checkbox" id="demo-copy" name="demo-copy">
+                                        <label for="demo-copy">Email me a copy</label>
+                                    </div>
+                                    <div class="6u$ 12u$(small)">
+                                        <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                        <label for="demo-human">Not a robot</label>
+                                    </div>
+                                    <div class="12u$">
+                                        <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+                                    </div>
+                                    <div class="12u$">
+                                        <ul class="actions">
+                                            <li><input id="submit" type="submit" value="Send Message" class="special" /></li>
+                                            <li><input id="submit" type="reset" value="Reset" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </section>
+            </article>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/devionfothergill/" class="icon word fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://www.facebook.com/dee.fothergill" class="icon word fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/fvmous_dev_/" class="icon word fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/HelloImDevion?tab=repositories" class="icon word fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox/15fdf0b611245678?compose=new" class="icon word fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Devion Fothergill</li>
+                    <li>Design: <a class="icon word" href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
 
-			</div>
-
+        </div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -135,6 +192,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#submit').on('click', function () { 
+                              alert('update coming soon for working form');
+                        });
+                    });
+
+            </script>
 
 	</body>
 </html>
